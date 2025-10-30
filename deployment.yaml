@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-country-service2
+  labels:
+    app: my-country-service2
+spec:
+  selector:
+    matchLabels:
+      app: country-service
+  template:
+    metadata:
+      labels:
+        app: country-service
+    spec:
+      containers:
+      - name: country-service-container
+        image: amalgh/my-country-service:13
+        ports:
+        - containerPort: 8082
