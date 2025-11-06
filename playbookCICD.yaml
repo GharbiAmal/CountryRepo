@@ -7,7 +7,7 @@
     image_tag: 11
     dockerfile_path: './'
     docker_registry_username: amalgh
-    docker_registry_password: dckr_pat_Dnu5RUMxjFn4UltDnZ7jEj9F6w4
+    docker_registry_password: Amila97920600
   
   tasks:
     - name: Log in to Docker Hub
